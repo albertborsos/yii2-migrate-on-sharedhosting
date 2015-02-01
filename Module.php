@@ -4,7 +4,13 @@ namespace vendor\albertborsos\yii2migrateonsharedhosting;
 
 class Module extends \yii\base\Module
 {
-	public $controllerNamespace = 'vendor\albertborsos\yii2migrateonsharedhosting\controllers';
+	public $controllerNamespace = 'albertborsos\yii2migrateonsharedhosting\controllers';
+
+	public $defaultController = '';
+
+	public $name = 'Migrate';
+
+	public $migrationPaths = [];
 
 	public function init()
 	{
