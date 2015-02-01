@@ -1,0 +1,21 @@
+{
+	"name": "albertborsos/yii2-migrate-on-sharedhosting",
+	"description": "Run migrate scripts on a shared hosting server from a public URL",
+	"type": "yii2-extension",
+	"keywords": ["yii2","extension","migrate"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Albert Borsos",
+			"email": "hello@borsosalbert.hu"
+		}
+	],
+    "require": {
+        "albertborsos/yii2-lib": "*"
+    },
+	"autoload": {
+		"psr-4": {
+			"albertborsos\\yii2migrateonsharedhosting\\": ""
+		}
+	}
+}
