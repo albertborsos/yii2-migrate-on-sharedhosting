@@ -5,7 +5,7 @@ namespace albertborsos\yii2migrateonsharedhosting\controllers;
 use albertborsos\yii2lib\web\Controller;
 use Yii;
 
-class MigrateController extends Controller
+class MigrateController extends \yii\rest\Controller
 {
 	public function init()
 	{
@@ -14,7 +14,7 @@ class MigrateController extends Controller
 		$this->layout = '//center';
 
 		$this->actionName = array_merge($this->actionName, [
-			'migrate' => 'Kosaram tartalma',
+			'migrate' => 'Migrate',
 		]);
 	}
 
@@ -36,6 +36,9 @@ class MigrateController extends Controller
 		}
 
 		Yii::$app = $oldApp;
+
+		return $this->render('@vendor/albertborsos/yii2-cms/views/default/error.php');
+
 	}
 
 }

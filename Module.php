@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\albertborsos\yii2migrateonsharedhosting;
+namespace albertborsos\yii2migrateonsharedhosting;
 
 class Module extends \yii\base\Module
 {
