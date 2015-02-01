@@ -6,8 +6,6 @@ class Module extends \yii\base\Module
 {
 	public $controllerNamespace = 'albertborsos\yii2migrateonsharedhosting\controllers';
 
-	public $defaultController = '';
-
 	public $name = 'Migrate';
 
 	public $migrationPaths = [];
@@ -15,7 +13,6 @@ class Module extends \yii\base\Module
 	public function init()
 	{
 		parent::init();
-
 		// custom initialization code goes here
 	}
 }
